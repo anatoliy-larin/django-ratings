@@ -6,6 +6,12 @@ django-ratings
 
 A generic ratings module. The field itself appends two additional fields on the model, for optimization reasons. It adds ``<field>_score``, and ``<field>_votes`` fields, which are both integer fields.
 
+
+**Updated 03.02.2015**
+
+Append backwards compatible Django 1.5 Custom User model support.
+Release 0.3.8.
+
 ============
 Installation
 ============
