@@ -5,12 +5,12 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
 
 # support for custom User models in Django 1.5+
+from django.conf import settings
 try:
     from django.contrib.auth import get_user_model
+    User = settings.AUTH_USER_MODEL
 except ImportError:  # django < 1.5
     from django.contrib.auth.models import User
-else:
-    User = get_user_model()
 
 
 try:

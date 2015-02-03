@@ -10,7 +10,7 @@ A generic ratings module. The field itself appends two additional fields on the 
 **Updated 03.02.2015**
 
 Append backwards compatible Django 1.5 Custom User model support.
-Release 0.3.8.
+Release 0.3.9.
 
 ============
 Installation

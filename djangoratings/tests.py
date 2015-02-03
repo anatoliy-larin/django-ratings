@@ -2,15 +2,15 @@ import unittest
 import random
 
 from django.db import models
+from django.conf import settings
 # support for custom User models in Django 1.5+
 try:
     from django.contrib.auth import get_user_model
+    User = settings.AUTH_USER_MODEL
 except ImportError:  # django < 1.5
     from django.contrib.auth.models import User
-else:
-    User = get_user_model()
+
 from django.contrib.contenttypes.models import ContentType
-from django.conf import settings
 
 from exceptions import *
 from models import Vote, SimilarUser, IgnoredObject
